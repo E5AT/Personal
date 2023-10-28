@@ -1,0 +1,5 @@
+E:\C#\Personal\beklenen deger\bin\Debug\beklenen deger.exe.config
+E:\C#\Personal\beklenen deger\bin\Debug\beklenen deger.exe
+E:\C#\Personal\beklenen deger\bin\Debug\beklenen deger.pdb
+E:\C#\Personal\beklenen deger\obj\Debug\beklenen deger.exe
+E:\C#\Personal\beklenen deger\obj\Debug\beklenen deger.pdb

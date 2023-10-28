@@ -1,0 +1,1 @@
+E:\C#\PB-November-2023\01. FirstStepsInProgramming-Lab\05. Greeting by Name\bin\Debug\_05.Greeting_by_Name.exe.config

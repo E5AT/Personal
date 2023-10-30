@@ -1,0 +1,5 @@
+E:\C#\Personal\1prj\bin\Debug\1prj.exe.config
+E:\C#\Personal\1prj\bin\Debug\1prj.exe
+E:\C#\Personal\1prj\bin\Debug\1prj.pdb
+E:\C#\Personal\1prj\obj\Debug\1prj.exe
+E:\C#\Personal\1prj\obj\Debug\1prj.pdb

@@ -1,0 +1,1 @@
+E:\C#\Personal\calculator\bin\Debug\calculator.exe.config

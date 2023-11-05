@@ -1,0 +1,6 @@
+E:\C#\Personal\4prj\bin\Debug\4prj.exe.config
+E:\C#\Personal\4prj\bin\Debug\4prj.exe
+E:\C#\Personal\4prj\bin\Debug\4prj.pdb
+E:\C#\Personal\4prj\obj\Debug\4prj.csprojResolveAssemblyReference.cache
+E:\C#\Personal\4prj\obj\Debug\4prj.exe
+E:\C#\Personal\4prj\obj\Debug\4prj.pdb

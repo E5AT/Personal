@@ -1,5 +1,0 @@
-E:\C#\PB-November-2023\01. FirstStepsInProgramming-Lab\06. Concatenate Data\bin\Debug\_06.Concatenate_Data.exe.config
-E:\C#\PB-November-2023\01. FirstStepsInProgramming-Lab\06. Concatenate Data\bin\Debug\_06.Concatenate_Data.exe
-E:\C#\PB-November-2023\01. FirstStepsInProgramming-Lab\06. Concatenate Data\bin\Debug\_06.Concatenate_Data.pdb
-E:\C#\PB-November-2023\01. FirstStepsInProgramming-Lab\06. Concatenate Data\obj\Debug\_06.Concatenate_Data.exe
-E:\C#\PB-November-2023\01. FirstStepsInProgramming-Lab\06. Concatenate Data\obj\Debug\_06.Concatenate_Data.pdb

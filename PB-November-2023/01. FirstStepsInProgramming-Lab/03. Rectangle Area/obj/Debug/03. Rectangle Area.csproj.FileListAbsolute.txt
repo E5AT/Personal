@@ -1,1 +1,0 @@
-E:\C#\PB-November-2023\01. FirstStepsInProgramming-Lab\03. Rectangle Area\bin\Debug\_03.Rectangle_Area.exe.config

@@ -1,1 +1,0 @@
-E:\C#\PB-November-2023\01. FirstStepsInProgramming-Lab\01. Hello SoftUni\bin\Debug\_01.Hello_SoftUni.exe.config

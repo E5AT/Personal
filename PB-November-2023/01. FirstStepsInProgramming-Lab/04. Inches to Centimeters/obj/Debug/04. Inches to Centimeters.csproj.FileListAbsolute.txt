@@ -1,1 +1,0 @@
-E:\C#\PB-November-2023\01. FirstStepsInProgramming-Lab\04. Inches to Centimeters\bin\Debug\_04.Inches_to_Centimeters.exe.config

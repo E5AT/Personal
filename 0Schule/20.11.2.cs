@@ -25,14 +25,14 @@ namespace _20._11._2
     {
         static void Main(string[] args)
         {
-            Triangle triangle = new Triangle();
-            Console.Write("a = "); triangle.a = int.Parse(Console.ReadLine());
-            Console.Write("b = "); triangle.b = int.Parse(Console.ReadLine());
-            Console.Write("c = "); triangle.c = int.Parse(Console.ReadLine());
-            Console.Write("h = "); triangle.h = int.Parse(Console.ReadLine());
+            Triangle triangle1 = new Triangle();
+            Console.Write("a = "); triangle1.a = int.Parse(Console.ReadLine());
+            Console.Write("b = "); triangle1.b = int.Parse(Console.ReadLine());
+            Console.Write("c = "); triangle1.c = int.Parse(Console.ReadLine());
+            Console.Write("h = "); triangle1.h = int.Parse(Console.ReadLine());
 
-            double P = triangle.calcP();
-            double S = triangle.calcS();
+            double P = triangle1.calcP();
+            double S = triangle1.calcS();
 
             Console.WriteLine("P = " + P + " cm");
             Console.WriteLine("S = " + S + " cm2");

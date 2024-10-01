@@ -1,0 +1,29 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Random r = new Random();
+        int card = r.Next(2,15);
+        string cardT;
+        if (card==12) cardT = "K";
+        else if(card==13) cardT="J";
+        else if(card==14) cardT="Q";
+        else if(card==11) cardT="A";
+        else cardT=card.ToString();
+        Console.WriteLine(cardT);
+        
+        int chip=r.Next(1,6);
+        string chipT;
+        if(chip==1) chipT="Beyaz - 1";
+        else if(chip==2) chipT="Kırmızı - 10";
+        else if(chip==3) chipT="Yeşil - 100";
+        else if(chip==4) chipT="Siyah - 500";
+        else chipT="Mavi - 1000";
+        Console.WriteLine(chipT);
+    }
+}

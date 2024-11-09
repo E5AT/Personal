@@ -20,9 +20,11 @@
     <h4 style="color: #ff4500; font-family: 'Hacker', monospace;">Date: 9/11/24</h4>
     </div>
 </div>
+
 <h2 style="color: #ff6347; margin-top: 30px; font-family: 'Hacker', monospace;">Setup</h2>
 <p style="color: #ff4500; font-family: 'Hacker', monospace;">To run any of the projects in this repository:</p>
 <pre style="background: #ffe4e1; padding: 10px; border-radius: 5px; font-family: 'Hacker', monospace;"><code>
+# Clone this repository
 git clone https://github.com/your_username/Personal.git
 </code></pre>
 

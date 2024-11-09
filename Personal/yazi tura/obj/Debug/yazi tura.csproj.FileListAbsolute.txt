@@ -1,6 +1,0 @@
-E:\C#\Personal\yazi tura\bin\Debug\yazi tura.exe.config
-E:\C#\Personal\yazi tura\bin\Debug\yazi tura.exe
-E:\C#\Personal\yazi tura\bin\Debug\yazi tura.pdb
-E:\C#\Personal\yazi tura\obj\Debug\yazi tura.csprojResolveAssemblyReference.cache
-E:\C#\Personal\yazi tura\obj\Debug\yazi tura.exe
-E:\C#\Personal\yazi tura\obj\Debug\yazi tura.pdb

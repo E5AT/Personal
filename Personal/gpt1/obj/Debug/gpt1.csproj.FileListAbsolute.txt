@@ -1,6 +1,0 @@
-E:\C#\Personal\gpt1\bin\Debug\gpt1.exe.config
-E:\C#\Personal\gpt1\bin\Debug\gpt1.exe
-E:\C#\Personal\gpt1\bin\Debug\gpt1.pdb
-E:\C#\Personal\gpt1\obj\Debug\gpt1.csprojResolveAssemblyReference.cache
-E:\C#\Personal\gpt1\obj\Debug\gpt1.exe
-E:\C#\Personal\gpt1\obj\Debug\gpt1.pdb

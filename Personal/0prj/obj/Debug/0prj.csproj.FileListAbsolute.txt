@@ -1,6 +1,0 @@
-E:\C#\Personal\0prj\bin\Debug\0prj.exe.config
-E:\C#\Personal\0prj\bin\Debug\0prj.exe
-E:\C#\Personal\0prj\bin\Debug\0prj.pdb
-E:\C#\Personal\0prj\obj\Debug\0prj.csprojResolveAssemblyReference.cache
-E:\C#\Personal\0prj\obj\Debug\0prj.exe
-E:\C#\Personal\0prj\obj\Debug\0prj.pdb

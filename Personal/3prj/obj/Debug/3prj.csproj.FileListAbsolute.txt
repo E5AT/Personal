@@ -1,6 +1,0 @@
-E:\C#\Personal\3prj\bin\Debug\3prj.exe.config
-E:\C#\Personal\3prj\bin\Debug\3prj.exe
-E:\C#\Personal\3prj\bin\Debug\3prj.pdb
-E:\C#\Personal\3prj\obj\Debug\3prj.csprojResolveAssemblyReference.cache
-E:\C#\Personal\3prj\obj\Debug\3prj.exe
-E:\C#\Personal\3prj\obj\Debug\3prj.pdb

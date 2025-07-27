@@ -17,3 +17,7 @@
     font-weight: 600;
     font-size: 0.89rem;
 }
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}

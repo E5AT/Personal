@@ -147,6 +147,61 @@
         Button that has js
     </button>
 
+    <br>
+
+    <h3>Touge Application Form</h3>
+    <form action="index.php">
+        <label for="name">Your name:</label>
+        <input type="text" id="name" placeholder="Takumi Fujiwara" minlength="2" maxlength="25"><br>
+
+        <label for="PIN">Your PIN:</label>
+        <input type="password" id="PIN" placeholder="13-954"><br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" placeholder="tfujiwara@fake.com"><br>
+
+        <label for="tel">Your phone number:</label>
+        <input type="tel" id="tel" placeholder="090-8686-1986" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+        <label for="date">Your birth date:</label>
+        <input type="date" id="date"><br>
+
+        <label for="number">Number of races you want:</label>
+        <input type="number" min="1" max="10" value="1"><br>
+
+        <label for="radio">With who you wanna race?:</label><br>
+
+        <input type="radio" id="takumi" value="Takumi Fujiwara" name="racer">
+        <label for="takumi">Takumi Fujiwara</label><br>
+        
+        <input type="radio" id="keisuke" value="Keisuke Takahashi" name="racer">
+        <label for="keisuke">Keisuke Takahashi</label><br>
+
+        <label for="previousExperience">You have previous experience?</label>
+        <select id="previousExperience">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <label for="accept">Accept everything?:</label>
+        <input type="checkbox" id="accept"><br>
+
+        <label for="comment">Something to say?:</label>
+        <textarea id="comment" rows="3" cols="25"></textarea><br>
+
+        <label for="car">Photo of ur car:</label>
+        <input type="file" id="car"><br>
+
+
+
+
+
+
+
+        <input type="reset">
+        <input type="submit">
+    </form>
+
     <script>
         function ChangeButtonHeader(){
             document.getElementById("buttonsHeader").innerHTML = "You clicked second button";

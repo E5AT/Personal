@@ -14,3 +14,17 @@
     background-color: white;
     box-shadow: 3px 3px 5px;
 }
+.box{
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+}
+#box1{
+    background-color: red;
+    margin-left: auto;
+}
+#box2{
+    background-color: aqua;
+    margin: auto;
+}

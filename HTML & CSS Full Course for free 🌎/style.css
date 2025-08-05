@@ -4,3 +4,7 @@
 #redText{
     color: #FF0000;
 }
+@font-face {
+    font-family: Playwrite;
+    src: url(fonts/PlaywriteHU-VariableFont_wght.ttf);
+}

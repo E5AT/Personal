@@ -28,3 +28,12 @@
     background-color: aqua;
     margin: auto;
 }
+#img1{
+    float: left;
+    margin: -40px;
+}
+#img2{
+    float: right;
+    margin: -40px;
+    display: flow-root;
+}

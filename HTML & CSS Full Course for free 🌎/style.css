@@ -41,3 +41,11 @@
     border: 2px solid;
     height: 75px;
 }
+.kutu{
+    border: 2px solid;
+    height: auto;
+    width: 50%;
+    float: right;
+    padding: 25px;
+    box-sizing: border-box;
+}

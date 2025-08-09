@@ -17,7 +17,22 @@
 */
 
 //variables
-let age = 18, firstName = "Esat", online = false;
+/*let age = 18, firstName = "Esat", online = false;
 document.getElementById("myH1").textContent = `Hi ${firstName},`;
 document.getElementById("myP1").textContent = `You're ${age} years old`;
-document.getElementById("myP2").textContent = `And you're ${online?"online":"offline"}`;
+document.getElementById("myP2").textContent = `And you're ${online?"online":"offline"}`;*/
+
+//user input
+
+//easy method: 
+let username;
+/*username = window.prompt("Ur username: ");
+console.log(username);*/
+
+//the hard one:
+
+document.getElementById("mySubmit").onclick = function(){
+    username = document.getElementById("myText").value;
+    document.getElementById("myH1").textContent = `Welcome, ${username}!`;
+
+}

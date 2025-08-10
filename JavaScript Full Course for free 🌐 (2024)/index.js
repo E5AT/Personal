@@ -31,8 +31,16 @@ console.log(username);*/
 
 //the hard one:
 
-document.getElementById("mySubmit").onclick = function(){
+/*document.getElementById("mySubmit").onclick = function(){
     username = document.getElementById("myText").value;
     document.getElementById("myH1").textContent = `Welcome, ${username}!`;
 
-}
+}*/
+
+//type conversion
+
+let age = Number(window.prompt("Whats your age?"));
+
+age++;
+
+document.getElementById("myH1").textContent = `Youll be ${age} years old after 1 year!`;

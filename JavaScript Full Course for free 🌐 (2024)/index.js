@@ -39,8 +39,20 @@ console.log(username);*/
 
 //type conversion
 
-let age = Number(window.prompt("Whats your age?"));
+/*let age = Number(window.prompt("Whats your age?"));
 
 age++;
 
-document.getElementById("myH1").textContent = `Youll be ${age} years old after 1 year!`;
+document.getElementById("myH1").textContent = `Youll be ${age} years old after 1 year!`;*/
+
+//consts
+
+const PI = 3.14159;
+let area, radius;
+document.getElementById("mySubmit").onclick = function(){
+    radius = Number(document.getElementById("myText").value);
+
+    area = PI * (radius*radius);
+
+    document.getElementById("myH3").textContent = `The area of a circle with radius of ${radius}cm is = ${area}cm2.`;
+}

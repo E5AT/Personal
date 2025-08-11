@@ -1,0 +1,28 @@
+body{
+    font-family: cursive;
+    font-size: 1.5em;
+    margin-left: 30px;
+    background-color: #7c4d33;
+    color: #f8ddc8;
+}
+button{
+    margin-top: 10px;
+    font-family: cursive;
+    font-size: 1em;
+    background-color: #4a250b;
+    color: #f1b56f;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #2f1807;
+}
+p{
+    font-size: 1.8em;
+}
+input{
+    accent-color: #4a250b;
+}

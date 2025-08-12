@@ -1,0 +1,28 @@
+body{
+    background-color: #1f1f1f;
+    font-family: arial;
+    font-size: 1.5em;
+}
+h1{
+    color: #4b8dce;
+}
+h2{
+    color: #77c0eb;
+}
+li{
+    color: #c47245;
+}
+button{
+    font-size: 1em;
+    margin-left: 50px;
+    padding: 10px 25px;
+    font-family: Arial;
+    background-color: #181818;
+    border: none;
+    border-radius: 20px;
+    color: #b8bfb8;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #2d2e2e;
+}

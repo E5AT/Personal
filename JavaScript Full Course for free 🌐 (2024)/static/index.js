@@ -1,3 +1,6 @@
+/*
+STATIC
+
 class User{
     static userCount = 0;
 
@@ -14,4 +17,26 @@ class User{
 const user1 = new User("Spongebob"),
 user2 = new User("Patrick");
 
-User.getUserCount();
+User.getUserCount();*/
+
+//INHERITANCE
+
+class Animal{
+    alive = true;
+
+    eat(){
+        console.log(`This ${this.name} is`+(!this.alive?"n't":"")+" eating!");
+    }
+}
+
+class Rabbit extends Animal{
+    name = "Rabbit";
+    canJump(){
+        console.log(`Yes, ${this.name}s can jump!`);
+    }
+}
+
+const rabbit = new Rabbit();
+rabbit.alive = false;
+rabbit.eat();
+rabbit.canJump();

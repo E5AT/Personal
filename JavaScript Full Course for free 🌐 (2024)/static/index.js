@@ -21,7 +21,7 @@ User.getUserCount();*/
 
 //INHERITANCE
 
-class Animal{
+/*class Animal{
     alive = true;
 
     eat(){
@@ -39,4 +39,22 @@ class Rabbit extends Animal{
 const rabbit = new Rabbit();
 rabbit.alive = false;
 rabbit.eat();
-rabbit.canJump();
+rabbit.canJump();*/
+
+//SUPER KEYWORD
+
+class Animal{
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+}
+class Fish extends Animal{
+    constructor(name, age){
+        super(name, age);
+
+        console.log(`New animal created named ${this.name} and ${this.age} years old! `)
+    }
+}
+
+const fish = new Fish("Enes",15);

@@ -70,5 +70,8 @@ body{
     color: #5d6274;
 }
 .container h3{
-    text-align: center;;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #ff465a;
 }

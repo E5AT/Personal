@@ -5,7 +5,25 @@ import "../css/Home.css"
 
 function Home(){
     const[searchQueary, setSearchQueary] = useState("");
-const[movies, setMovies] = useState([]);
+    const[movies, setMovies] = useState([]);
+    const[error, setError] = useState(null);
+    const[loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        const loadPopularMovies = async () => {
+            try{
+                const popularMovies = await getPopularMovies();
+                setMovies(popularMovies);
+            }catch(err){
+                console.error(err);
+                setError("Failed to load movies...");
+            }
+            finally {
+                setLoading(false);
+            }
+        }
+        loadPopularMovies();
+    }, []);
 
     const handleSearch = (e) => {
         e.preventDefault()

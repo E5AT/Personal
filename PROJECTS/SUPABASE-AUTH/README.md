@@ -1,16 +1,92 @@
-# React + Vite
+# Supabase Auth Starter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern authentication starter template built with React, Vite, Tailwind CSS, and Supabase. Demonstrates secure authentication flows including signup, login, and protected routes.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- 🛡️ Secure authentication using Supabase
+- 🔐 Protected routes with React Router
+- 📱 Responsive design with Tailwind CSS
+- 🔄 Real-time session management
+- 🧩 Modular component architecture
+- 🧪 ESLint configuration with React best practices
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Prerequisites
 
-## Expanding the ESLint configuration
+- Node.js >= 18.x
+- npm >= 9.x
+- Supabase account (free tier available)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+
+1. Clone the repository:
+```bash
+git clone [repository-url]
+```
+
+2. Navigate to project directory:
+```bash
+cd SUPABASE-AUTH
+```
+
+3. Install dependencies:
+```bash
+npm install
+```
+
+## Configuration
+
+1. Create a `.env` file in the project root:
+```env
+VITE_SUPABASE_URL=your-supabase-url
+VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
+```
+
+2. Get your Supabase credentials:
+- Go to your [Supabase Dashboard](https://app.supabase.com/)
+- Create new project
+- Navigate to Project Settings > API
+- Copy URL and anon public key
+
+## Running the Project
+
+```bash
+npm run dev
+```
+
+## Project Structure
+
+```bash
+├── src/
+│   ├── components/      # Reusable UI components
+│   │   ├── Dashboard.jsx
+│   │   ├── PrivateRoute.jsx
+│   │   ├── Signin.jsx
+│   │   └── Signup.jsx
+│   │
+│   ├── context/         # Authentication context
+│   │   └── AuthContext.jsx
+│   │
+│   ├── router.jsx       # Application routes
+│   ├── supabaseClient.js # Supabase initialization
+│   └── ...
+├── vite.config.js       # Vite + Tailwind configuration
+└── ...
+```
+
+## Environment Variables
+
+| Variable              | Description                        |
+|-----------------------|------------------------------------|
+| VITE_SUPABASE_URL     | Your Supabase project URL          |
+| VITE_SUPABASE_ANON_KEY| Your Supabase anonymous API key    |
+
+## Demo Video Reference
+
+The implementation follows the structure shown in this tutorial video:
+[SUPABASE-AUTH Tutorial](https://youtu.be/1KBV8M0mpYI?si=JlQqprVYkNlsNfDo)

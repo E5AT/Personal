@@ -3,10 +3,18 @@ import App from "./App";
 import SignUp from "./components/SignUp";
 import Signin from "./components/Signin";
 import Dashboard from "./components/Dashboard";
+import PrivateRoute from "./components/PrivateRoute";
 
 export const router = createBrowserRouter([
-    {path: "/", element: <App/>},
-    {path: "/signup", element: <SignUp/>},
-    {path: "/signin", element: <Signin/>},
-    {path: "/dashboard", element: <Dashboard/>}
-]); 
+  { path: "/", element: <App /> },
+  { path: "/signup", element: <SignUp /> },
+  { path: "/signin", element: <Signin /> },
+  {
+    path: "/dashboard",
+    element: (
+      <PrivateRoute>
+        <Dashboard />
+      </PrivateRoute>
+    ),
+  },
+]);

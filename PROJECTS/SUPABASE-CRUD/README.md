@@ -1,16 +1,81 @@
-# React + Vite
+# SUPABASE-CRUD - React CRUD App with Supabase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
 
-Currently, two official plugins are available:
+A React application demonstrating basic CRUD (Create, Read, Update, Delete) operations using Supabase as the backend service.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Create new records
+- Read and display data from Supabase
+- Update existing records
+- Delete records
+- Real-time updates
+- Secure authentication via Supabase
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Prerequisites
 
-## Expanding the ESLint configuration
+- Node.js >= 18.x
+- npm >= 9.x
+- Supabase account
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+
+```bash
+git clone [repository-url]
+cd SUPABASE-CRUD
+npm install
+```
+
+## Configuration
+
+1. Create `.env` file in project root:
+```ini
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_KEY=your_supabase_anon_key
+```
+
+2. Get credentials from your Supabase project dashboard
+
+## Available Scripts
+
+```bash
+npm run dev    # Start development server
+npm run build  # Create production build
+npm run lint   # Run ESLint checks
+npm run preview # Preview production build
+```
+
+## Project Structure
+
+```bash
+src/
+├── App.jsx          # Main application component
+├── main.jsx         # Application entry point
+├── supabase-client.js # Supabase initialization
+public/              # Static assets
+.env                 # Environment variables (template)
+```
+
+## Tutorial
+
+Follow along with the video tutorial:  
+[Supabase CRUD Tutorial](https://youtu.be/tW1HO7i9EIM?si=aIt4ifSw6z1NErzC)
+
+![App Preview](public/app-preview.png)
+
+## Important Notes
+
+⚠️ **DO NOT COMMIT SECRETS**  
+- Add `.env` and `password.txt` to `.gitignore`
+- Never expose Supabase credentials in version control
+
+## Contributing
+
+Pull requests welcome! For major changes, please open an issue first.
+
+## License
+
+[MIT](LICENSE)

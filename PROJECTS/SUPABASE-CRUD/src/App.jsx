@@ -1,10 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import supabase from "./supabase-client";
 
 function App() {
   const [todoList, setTodoList] = useState([]);
   const [newTodo, setNewTodo] = useState("");
+
+  useEffect(() => {
+    fetchTodos();
+  }, []);
+
+  const fetchTodos = async () => {
+    const { data, error } = await supabase.from("TodoList").select("*");
+    if (error) {
+      console.log("Error fetching: ", error);
+    } else {
+      setTodoList(data);
+    }
+  };
+
   const addTodo = async () => {
     const newTodoData = {
       name: newTodo,
@@ -13,13 +27,41 @@ function App() {
     const { data, error } = await supabase
       .from("TodoList")
       .insert([newTodoData])
+      .select()
       .single();
 
     if (error) {
-      console.log("Error: ", error);
+      console.log("Error adding todo: ", error);
     } else {
       setTodoList((prev) => [...prev, data]);
       setNewTodo("");
+    }
+  };
+
+  const completeTask = async (id, isCompleted) => {
+    const { data, error } = await supabase
+      .from("TodoList")
+      .update({ isCompleted: !isCompleted })
+      .eq("id", id);
+    if (error) {
+      console.log("Error toggling task: ", error);
+    } else {
+      const updatedTodoList = todoList.map((todo) =>
+        todo.id === id ? { ...todo, isCompleted: !isCompleted } : todo
+      );
+      setTodoList(updatedTodoList);
+    }
+  };
+
+  const deleteTask = async (id) => {
+    const { data, error } = await supabase
+      .from("TodoList")
+      .delete()
+      .eq("id", id);
+    if (error) {
+      console.log("Error deleting task: ", error);
+    } else {
+      setTodoList((prev) => prev.filter((todo) => todo.id !== id));
     }
   };
 
@@ -34,12 +76,20 @@ function App() {
             onChange={(e) => setNewTodo(e.target.value)}
             value={newTodo}
           />
-          <button onClick={addTodo}>Add Todo Item</button>
+          <button type="button" onClick={addTodo}>
+            Add Todo Item
+          </button>
         </div>
 
         <ul>
           {todoList.map((todo) => (
-            <li key={todo.id}>{todo.name}</li>
+            <li>
+              <p>{todo.name}</p>
+              <button onClick={() => completeTask(todo.id, todo.isCompleted)}>
+                {todo.isCompleted ? "Undo" : "Complete Task"}
+              </button>
+              <button onClick={() => deleteTask(todo.id)}>Delete Task</button>
+            </li>
           ))}
         </ul>
       </div>
